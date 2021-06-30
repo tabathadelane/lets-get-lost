@@ -1,13 +1,17 @@
+
+$body-color: green !important;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 body{
   /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #222;
+  // background: #222;
 }
 
 h2{
-  color: red;
 }
 
 .card{
@@ -32,13 +36,13 @@ h2{
 }
 
 .front{
-  background: linear-gradient(#08aeea, #2af598);
+  background: linear-gradient(#333, #05693c);
   z-index: 2;
   backface-visibility: hidden;
 }
 
 .back{
-  background: linear-gradient(#f8da61, #ff5acd);
+  background: linear-gradient(#555, #a10916);
   z-index: 1;
   transform: rotateY(180deg);
 }
@@ -50,3 +54,6 @@ h2{
 .container{
   perspective: 1000px;
 }
+
+
+

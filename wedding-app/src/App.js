@@ -1,6 +1,7 @@
 import React from 'react'
 // import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+// import './Custom.scss'
 
 
 import Header from './Components/Header'
@@ -25,7 +26,6 @@ function App() {
 
         <div className="p-3">
 
-              <Backstory />
 
               <Attire />
 
@@ -39,6 +39,7 @@ function App() {
 
               <Weekend />
 
+              <Backstory />
 
         </div>
 
@@ -47,3 +48,5 @@ function App() {
 }
 
 export default App;
+
+
