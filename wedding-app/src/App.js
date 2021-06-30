@@ -24,24 +24,39 @@ function App() {
       <Header />
       <Countdown />
 
-        <div className="p-3">
+        <div class="container">
+          <div class="row row-cols-2 row-cols-md-3 mx-auto">
 
+              <div class="col p-2 " >
+                <Attire />
 
-              <Attire />
+              </div>
+              <div class="col p-2 " >
+                <Ceremony />
 
-              <Ceremony />
+              </div>
+              <div class="col p-2 " >
+                <Food />
 
-              <Food />
+              </div>
+              <div class="col p-2 " >
+                <Lodging />
 
-              <Lodging />
+              </div>
+              <div class="col p-2 " >
+                <Registry />
 
-              <Registry />
+              </div>
 
-              <Weekend />
+              <div class="col p-2 " >
+                <Weekend />
+
+              </div>
 
               <Backstory />
 
         </div>
+      </div>
 
     </div>
   );
