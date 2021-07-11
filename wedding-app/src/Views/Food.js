@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState} from 'react';
 
 function Food(){
+    const [isFlipped, addFlip] = useState(true);
+        
+    const toggleClass = () => {
+        addFlip(!isFlipped);
+      };
+
     return (
         <div class="deck">
-        <div class="card">
+        <div class="card" className={isFlipped ? 'card': 'card flipped'} 
+      onClick={toggleClass}>
 
             <h2 class="front">Menu</h2>
             <h3 class="back">
