@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState} from 'react';
 
 function Ceremony(){
+    const [isFlipped, addFlip] = useState(true);
+        
+    const toggleClass = () => {
+        addFlip(!isFlipped);
+      };
+
     return (
         <div class="deck">
-            <div class="card">
+            <div class="card" className={isFlipped ? 'card': 'card flipped'} 
+      onClick={toggleClass}>
 
-                <h2 class="front">Wedding Day Plan
+                <h2 class="front">
+                    <p>Wedding Day</p>
                 </h2>
                 <div class="back">
                     Hoh Rainforest •

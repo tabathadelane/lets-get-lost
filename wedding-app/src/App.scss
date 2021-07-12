@@ -1,23 +1,32 @@
-
 $body-color: #111 !important;
 
 // @import "../node_modules/bootstrap/scss/tables.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
-html body{
+html body {
   /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #777;
 }
 
-.row{
+.flex {
+  display: block;
+}
+
+.header h1,
+h2 {
+  font-family: "Otomanopee One", sans-serif;
+  text-align: center;
+}
+
+.row {
   background-color: transparent;
 }
 
-.card{
+.card {
   // height: 340px;
   // width: 250px;
   // height: 40vw;
@@ -25,44 +34,64 @@ html body{
   position: relative;
   transition: all 1s linear;
   transform-style: preserve-3d;
-  color: red;
+  color: #ccc;
   background-color: #222 !important;
-  border-radius: 15px !important;
+  border-radius: 10px !important;
+  width: 100%;
+  margin: auto;
 }
 
 .front,
-.back{
-  border-radius: 15px !important;
+.back {
+  border-radius: 10px !important;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   position: absolute;
   text-align: center;
   padding: 5px;
 }
 
-.front{
-  background: #222;
+.front {
+  font-family: "Otomanopee One", sans-serif;
+  background-image: url(./Assets/img/tarotcard.png);
+  background-size: 100%;
+  // background: #222;
+  // height: 100%;
   z-index: 2;
   backface-visibility: hidden;
 }
 
-.back{
+.front p {
+  background-color: #111;
+  box-shadow: 0px 0px 10px 10px #111;
+}
+
+.back {
   background: #222;
   z-index: 1;
   transform: rotateY(180deg);
 }
 
-.deck:hover .card{
+// .deck:hover .card{
+//   transform: rotateY(180deg);
+// }
+
+.flipped {
   transform: rotateY(180deg);
 }
 
-.deck{
+.deck {
   perspective: 1000px;
+}
+
+.story {
+  width: 100%;
+  margin: auto;
 }
 
 // <576px	Small
@@ -72,27 +101,26 @@ html body{
 // ≥1200px	XX-Large
 // ≥1400px XX-Large
 @media only screen and (max-width: 576px) {
-  .card{
-    height: 293px;
-    width:220px;
+  .card {
+    height: 329px;
+    width: 220px;
   }
 }
 @media only screen and (min-width: 576px) {
-  .card{
-    height: 320px;
+  .card {
+    height: 358px;
     width: 240px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .card{
-    height: 293px;
+  .card {
+    height: 329px;
     width: 220px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .card{
-    height: 347px;
+  .card {
+    height: 388px;
     width: 260px;
   }
 }
-

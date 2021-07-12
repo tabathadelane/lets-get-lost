@@ -3,10 +3,11 @@ import React from 'react'
 import './App.scss';
 // import './Custom.scss'
 
+// npm start --host 0.0.0.0
 
 import Header from './Components/Header'
 import Countdown from './Components/Countdown'
-import Cards from './Components/Cards'
+// import Cards from './Components/Cards'
 
 import Attire from "./Views/Attire";
 import Backstory from "./Views/Backstory";
@@ -18,50 +19,51 @@ import Weekend from "./Views/Weekend";
 
 
 
-function App() {
-  return (
-    <div className="">
-      <Header />
-      <Countdown />
+export default class App extends React.Component {
+    
+    render () {
+    return (
+      <div className="center">
+        <Header class="flex"/>
+        <Countdown class="flex" />
 
-        <div class="container">
-          <div class="row row-cols-2 row-cols-md-3 mx-auto">
+          <div class="container">
+            <div class="row row-cols-2 row-cols-md-3 ">
 
-              <div class="col p-2 " >
-                <Attire />
+                <div class="col p-2 " >
+                  <Attire />
+                </div>
 
-              </div>
-              <div class="col p-2 " >
-                <Ceremony />
+                <div class="col p-2 " >
+                  <Ceremony />
+                </div>
 
-              </div>
-              <div class="col p-2 " >
-                <Food />
+                <div class="col p-2 " >
+                  <Food />
+                </div>
 
-              </div>
-              <div class="col p-2 " >
-                <Lodging />
+                <div class="col p-2 " >
+                  <Lodging />
+                </div>
 
-              </div>
-              <div class="col p-2 " >
-                <Registry />
+                <div class="col p-2 " >
+                  <Registry />
+                </div>
 
-              </div>
 
-              <div class="col p-2 " >
-                <Weekend />
+                <div class="col p-2 " >
+                  <Weekend />
+                </div>
 
-              </div>
+                <Backstory />
 
-              <Backstory />
-
+          </div>
         </div>
       </div>
-
-    </div>
-  );
+    );
+}
 }
 
-export default App;
+
 
 
