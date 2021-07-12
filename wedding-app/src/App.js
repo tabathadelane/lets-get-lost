@@ -28,30 +28,30 @@ export default class App extends React.Component {
         <Countdown class="flex" />
 
           <div class="container">
-            <div class="row row-cols-2 row-cols-md-3 mx-auto">
+            <div class="row row-cols-2 row-cols-md-3 ">
 
-                <div class="col p-2" >
+                <div class="col p-2 " >
                   <Attire />
                 </div>
 
-                <div class="col p-2" >
+                <div class="col p-2 " >
                   <Ceremony />
                 </div>
 
-                <div class="col p-2" >
+                <div class="col p-2 " >
                   <Food />
                 </div>
 
-                <div class="col p-2" >
+                <div class="col p-2 " >
                   <Lodging />
                 </div>
 
-                <div class="col p-2" >
+                <div class="col p-2 " >
                   <Registry />
                 </div>
 
 
-                <div class="col p-2" >
+                <div class="col p-2 " >
                   <Weekend />
                 </div>
 

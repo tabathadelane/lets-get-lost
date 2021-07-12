@@ -10,8 +10,8 @@ import React, { useState} from 'react';
           };
     
         return (
-            <div class="deck">
-            <div class="card" className={isFlipped ? 'card': 'card flipped'} 
+            <div class="deck ">
+            <div class="card " className={isFlipped ? 'card': 'card flipped'} 
       onClick={toggleClass}>
 
                 <h2 class="front">
