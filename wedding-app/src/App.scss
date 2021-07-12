@@ -9,19 +9,42 @@ html body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #777;
+  background-color: rgb(39, 34, 23);
+  // background-color: rgb(31, 26, 16);
 }
 
-.flex {
+.block {
   display: block;
 }
 
-.header h1,
-h2 {
+.parent {
+  color: rgb(250, 241, 221);
+  // color: rgb(200, 167, 93);
   font-family: "Otomanopee One", sans-serif;
   text-align: center;
 }
+.us {
+  font-size: 36px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
 
+.date {
+  font-family: "Raleway Dots", sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.count {
+  // text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+.click {
+  // text-transform: uppercase;
+  // font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
 .row {
   background-color: transparent;
 }
@@ -49,15 +72,14 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
   position: absolute;
   text-align: center;
   padding: 5px;
 }
 
 .front {
-  font-family: "Otomanopee One", sans-serif;
+  font-size: 18px;
+  // font-family: "Otomanopee One", sans-serif;
   background-image: url(./Assets/img/tarotcard.png);
   background-size: 100%;
   // background: #222;
@@ -72,9 +94,12 @@ h2 {
 }
 
 .back {
-  background: #222;
+  font-family: "Raleway", sans-serif;
+  background: #111;
+  font-size: 14px;
   z-index: 1;
   transform: rotateY(180deg);
+  border: rgb(200, 167, 93) solid 3px;
 }
 
 // .deck:hover .card{
@@ -94,6 +119,25 @@ h2 {
   margin: auto;
 }
 
+.story h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.lost {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.photo {
+  margin-bottom: 10px;
+  filter: sepia(75%) saturate(150%);
+  width: 80vw;
+  border-radius: 5px;
+  border: rgb(200, 167, 93) solid 3px;
+  // height: auto;
+  // display: block;
+}
+
 // <576px	Small
 // ≥576px	Medium
 // ≥768px	Large
@@ -102,8 +146,8 @@ h2 {
 // ≥1400px XX-Large
 @media only screen and (max-width: 576px) {
   .card {
-    height: 329px;
-    width: 220px;
+    height: 299px;
+    width: 200px;
   }
 }
 @media only screen and (min-width: 576px) {

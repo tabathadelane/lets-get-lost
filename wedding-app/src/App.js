@@ -4,6 +4,7 @@ import './App.scss';
 // import './Custom.scss'
 
 // npm start --host 0.0.0.0
+// npm start 10.0.0.227:3000
 
 import Header from './Components/Header'
 import Countdown from './Components/Countdown'
@@ -23,9 +24,8 @@ export default class App extends React.Component {
     
     render () {
     return (
-      <div className="center">
-        <Header class="flex"/>
-        <Countdown class="flex" />
+      <div className="parent">
+        <Header class="block"/>
 
           <div class="container">
             <div class="row row-cols-2 row-cols-md-3 ">
@@ -55,9 +55,10 @@ export default class App extends React.Component {
                   <Weekend />
                 </div>
 
+          </div>
+        {/* <Countdown class="block" /> */}
                 <Backstory />
 
-          </div>
         </div>
       </div>
     );
