@@ -12,7 +12,9 @@ function Weekend(){
         <div class="card" className={isFlipped ? 'card': 'card flipped'} 
       onClick={toggleClass}>
 
-            <h2 class="front">The Weekend Plan</h2>
+            <h2 class="front">
+                <p>Schedule</p>
+            </h2>
             <h3 class="back">
                 There is no firm plan for Sat & Sun. Feel free to take day trips to hiking trails, beaches, or Seattle.
                 <br /><br />

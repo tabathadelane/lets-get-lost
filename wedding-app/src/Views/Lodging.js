@@ -12,7 +12,9 @@ function Lodging(){
         <div class="card" className={isFlipped ? 'card': 'card flipped'} 
       onClick={toggleClass}>
 
-            <h2 class="front">The AirB&B</h2>
+            <h2 class="front">
+                <p>The AirB&B</p>
+            </h2>
             <h3 class="back" style={{'display': 'block', 'padding-top': '20px'}}>
             <a href="https://google.com">Check it out!</a>
             <br /><br />

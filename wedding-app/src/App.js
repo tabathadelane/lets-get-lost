@@ -23,9 +23,9 @@ export default class App extends React.Component {
     
     render () {
     return (
-      <div className="">
-        <Header />
-        <Countdown />
+      <div className="center">
+        <Header class="flex"/>
+        <Countdown class="flex" />
 
           <div class="container">
             <div class="row row-cols-2 row-cols-md-3 mx-auto">
