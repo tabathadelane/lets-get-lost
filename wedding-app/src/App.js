@@ -10,14 +10,16 @@ import Header from './Components/Header'
 import Countdown from './Components/Countdown'
 // import Cards from './Components/Cards'
 
-import Attire from "./Views/Attire";
-import Backstory from "./Views/Backstory";
+import DressCode from "./Views/DressCode";
 import Ceremony from "./Views/Ceremony";
-import Food from "./Views/Food";
-import Lodging from "./Views/Lodging";
+import Rsvp from "./Views/Rsvp";
+import AirBandB from "./Views/AirBandB";
 import Registry from "./Views/Registry";
 import Weekend from "./Views/Weekend";
 
+
+import Backstory from "./Views/Backstory";
+import Info from "./Views/Info";
 
 
 export default class App extends React.Component {
@@ -25,13 +27,18 @@ export default class App extends React.Component {
     render () {
     return (
       <div className="parent">
+        <div class="background"/>
         <Header class="block"/>
 
           <div class="container">
-            <div class="row row-cols-2 row-cols-md-3 ">
+            <div class="row row-cols-2 row-cols-md-3 ustify-content-center ">
 
                 <div class="col p-2 " >
-                  <Attire />
+                  <Rsvp />
+                </div>
+
+                <div class="col p-2 " >
+                  <AirBandB />
                 </div>
 
                 <div class="col p-2 " >
@@ -39,17 +46,12 @@ export default class App extends React.Component {
                 </div>
 
                 <div class="col p-2 " >
-                  <Food />
-                </div>
-
-                <div class="col p-2 " >
-                  <Lodging />
+                  <DressCode />
                 </div>
 
                 <div class="col p-2 " >
                   <Registry />
                 </div>
-
 
                 <div class="col p-2 " >
                   <Weekend />
@@ -58,6 +60,8 @@ export default class App extends React.Component {
           </div>
         {/* <Countdown class="block" /> */}
                 <Backstory />
+
+                <Info />
 
         </div>
       </div>

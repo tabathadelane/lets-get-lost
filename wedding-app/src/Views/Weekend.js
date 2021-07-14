@@ -13,12 +13,12 @@ function Weekend(){
       onClick={toggleClass}>
 
             <h2 class="front">
-                <p>Schedule</p>
+                <p>Social Media</p>
             </h2>
             <h3 class="back">
-                There is no firm plan for Sat & Sun. Feel free to take day trips to hiking trails, beaches, or Seattle.
+                A reminder that this is an elopement. 
                 <br /><br />
-                We can plan something together or you can enjoy some time away from home. Let us know!
+               Please refrain from mentioning/posting our wedding on social media until after we have announced it to family/friends ourselves. 
             </h3>
         </div>
     </div>

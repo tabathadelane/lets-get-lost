@@ -9,12 +9,33 @@ html body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgb(39, 34, 23);
   // background-color: rgb(31, 26, 16);
+  background-color: rgb(44, 18, 22);
 }
 
+.background {
+  background-image: url("./Assets/img/\(6\).png");
+  background-repeat: repeat;
+  background-size: 400px;
+  filter: invert(69%) sepia(64%) saturate(306%) hue-rotate(3deg) brightness(60%)
+    contrast(89%) opacity(0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+}
 .block {
   display: block;
+}
+
+.divider {
+  margin: auto !important;
+  border-top: rgb(200, 167, 93) 3px solid;
+  border-radius: 5px;
+  width: 40vw;
 }
 
 .parent {
@@ -24,16 +45,15 @@ html body {
   text-align: center;
 }
 .us {
-  font-size: 36px;
-  padding-top: 10px;
-  padding-bottom: 5px;
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .date {
-  font-family: "Raleway Dots", sans-serif;
   font-size: 36px;
   font-weight: 200;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .count {
@@ -44,6 +64,7 @@ html body {
   // text-transform: uppercase;
   // font-family: "Raleway", sans-serif;
   font-size: 14px;
+  padding-top: 15px;
 }
 .row {
   background-color: transparent;
@@ -62,6 +83,8 @@ html body {
   border-radius: 10px !important;
   width: 100%;
   margin: auto;
+  // filter: brightness(70%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .front,
@@ -75,6 +98,11 @@ html body {
   position: absolute;
   text-align: center;
   padding: 5px;
+}
+
+.link {
+  color: gold;
+  font-weight: bold;
 }
 
 .front {
@@ -91,6 +119,11 @@ html body {
 .front p {
   background-color: #111;
   box-shadow: 0px 0px 10px 10px #111;
+}
+h1,
+h2,
+h3 {
+  text-shadow: goldenrod 2px 2px 20px;
 }
 
 .back {
@@ -125,12 +158,16 @@ html body {
 
 .lost {
   padding-top: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+  // font-weight: 500;
+  font-size: 48px;
 }
 
 .photo {
   margin-bottom: 10px;
-  filter: sepia(75%) saturate(150%);
+  filter: sepia(60%) saturate(140%) opacity(90%);
+
   width: 80vw;
   border-radius: 5px;
   border: rgb(200, 167, 93) solid 3px;
@@ -146,11 +183,14 @@ html body {
 // ≥1400px XX-Large
 @media only screen and (max-width: 576px) {
   .card {
-    height: 299px;
-    width: 200px;
+    height: 269px;
+    width: 180px;
   }
 }
 @media only screen and (min-width: 576px) {
+  .back {
+    font-size: 18px;
+  }
   .card {
     height: 358px;
     width: 240px;
@@ -161,8 +201,21 @@ html body {
     height: 329px;
     width: 220px;
   }
+  .back {
+    font-size: 18px;
+  }
 }
 @media only screen and (min-width: 992px) {
+  .back {
+    font-size: 22px;
+  }
+  .parent {
+    max-width: 1000px !important;
+    margin: auto;
+  }
+  .divider {
+    width: 350px;
+  }
   .card {
     height: 388px;
     width: 260px;
