@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 
-function Food(){
+function Weekend(){
     const [isFlipped, addFlip] = useState(true);
         
     const toggleClass = () => {
@@ -13,17 +13,15 @@ function Food(){
       onClick={toggleClass}>
 
             <h2 class="front">
-                <p>Menu</p>
+                <p>Social Media</p>
             </h2>
             <h3 class="back">
-            The day of the ceremony, Greg is making tacos!
-            <br /> <br />
-            Over the weekend, if you are planning to explore Washington, feel free to fend for yourselves or let us know if there is something you want to make for the group!
-            <br />
-            We will try to get a pony keg from 10B, but please brink your favaorite drinks!
+                A reminder that this is an elopement. 
+                <br /><br />
+               Please refrain from mentioning/posting our wedding on social media until after we have announced it to family/friends ourselves. 
             </h3>
         </div>
     </div>
     )}
 
-export default Food
+export default Weekend

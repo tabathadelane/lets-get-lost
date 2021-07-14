@@ -13,14 +13,13 @@ function Ceremony(){
       onClick={toggleClass}>
 
                 <h2 class="front">
-                    <p>Wedding Day</p>
+                    <p>Ceremony</p>
                 </h2>
                 <div class="back">
                     Hoh Rainforest •
-                    Olympic National Park, Forks, WA <br />
+                    Olympic National Park, Forks, WA <br /><br />
                     
-                    Ceremony @ 4PM <br /><br />
-                    Afterwards, everyone will return to the cabin as we take sunset photos with the photographer. We will meet you there for food and drink!
+                    Monday Oct 18 @ 4PM
                 </div>
             </div>
         </div>

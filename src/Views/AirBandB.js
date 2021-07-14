@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 
-function Lodging(){
+function AirBandB(){
     const [isFlipped, addFlip] = useState(true);
         
     const toggleClass = () => {
@@ -15,14 +15,15 @@ function Lodging(){
             <h2 class="front">
                 <p>The AirB&B</p>
             </h2>
-            <h3 class="back" style={{'display': 'block', 'padding-top': '20px'}}>
-            <a href="https://google.com">Check it out!</a>
+            <h3 class="back" style={{'display': 'block', 'padding-top': '40%'}}>
+            <a class="link" href="https://google.com">Check it out!</a>
             <br /><br />
-            We have the cabin booked from Sat Oct 16 @ 3PM - Tue Oct 19 @ 12PM. 
+             Sat Oct 16 @ 3PM -<br/>Tue Oct 19 @ 12PM. <br /><br />
+             Forks, WA
             <br /><br />            
             </h3>
         </div>
     </div>
     )}
 
-export default Lodging
+export default AirBandB
