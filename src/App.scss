@@ -1,0 +1,223 @@
+$body-color: #111 !important;
+
+// @import "../node_modules/bootstrap/scss/tables.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html body {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // background-color: rgb(31, 26, 16);
+  background-color: rgb(44, 18, 22);
+}
+
+.background {
+  background-image: url("./Assets/img/\(6\).png");
+  background-repeat: repeat;
+  background-size: 400px;
+  filter: invert(69%) sepia(64%) saturate(306%) hue-rotate(3deg) brightness(60%)
+    contrast(89%) opacity(0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+}
+.block {
+  display: block;
+}
+
+.divider {
+  margin: auto !important;
+  border-top: rgb(200, 167, 93) 3px solid;
+  border-radius: 5px;
+  width: 40vw;
+}
+
+.parent {
+  color: rgb(250, 241, 221);
+  // color: rgb(200, 167, 93);
+  font-family: "Otomanopee One", sans-serif;
+  text-align: center;
+}
+.us {
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.date {
+  font-size: 36px;
+  font-weight: 200;
+  padding-bottom: 25px;
+}
+
+.count {
+  // text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+.click {
+  // text-transform: uppercase;
+  // font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  padding-top: 15px;
+}
+.row {
+  background-color: transparent;
+}
+
+.card {
+  // height: 340px;
+  // width: 250px;
+  // height: 40vw;
+  // width: 30vw;
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+  color: #ccc;
+  background-color: #222 !important;
+  border-radius: 10px !important;
+  width: 100%;
+  margin: auto;
+  // filter: brightness(70%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.front,
+.back {
+  border-radius: 10px !important;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+}
+
+.link {
+  color: gold;
+  font-weight: bold;
+}
+
+.front {
+  font-size: 18px;
+  // font-family: "Otomanopee One", sans-serif;
+  background-image: url(./Assets/img/tarotcard.png);
+  background-size: 100%;
+  // background: #222;
+  // height: 100%;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.front p {
+  background-color: #111;
+  box-shadow: 0px 0px 10px 10px #111;
+}
+h1,
+h2,
+h3 {
+  text-shadow: goldenrod 2px 2px 20px;
+}
+
+.back {
+  font-family: "Raleway", sans-serif;
+  background: #111;
+  font-size: 14px;
+  z-index: 1;
+  transform: rotateY(180deg);
+  border: rgb(200, 167, 93) solid 3px;
+}
+
+// .deck:hover .card{
+//   transform: rotateY(180deg);
+// }
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.deck {
+  perspective: 1000px;
+}
+
+.story {
+  width: 100%;
+  margin: auto;
+}
+
+.story h3 {
+  font-family: "Raleway", sans-serif;
+}
+
+.lost {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+  // font-weight: 500;
+  font-size: 48px;
+}
+
+.photo {
+  margin-bottom: 10px;
+  filter: sepia(60%) saturate(140%) opacity(90%);
+
+  width: 80vw;
+  border-radius: 5px;
+  border: rgb(200, 167, 93) solid 3px;
+  // height: auto;
+  // display: block;
+}
+
+// <576px	Small
+// ≥576px	Medium
+// ≥768px	Large
+// ≥992px	X-Large
+// ≥1200px	XX-Large
+// ≥1400px XX-Large
+@media only screen and (max-width: 576px) {
+  .card {
+    height: 269px;
+    width: 180px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .back {
+    font-size: 18px;
+  }
+  .card {
+    height: 358px;
+    width: 240px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    height: 329px;
+    width: 220px;
+  }
+  .back {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .back {
+    font-size: 22px;
+  }
+  .parent {
+    max-width: 1000px !important;
+    margin: auto;
+  }
+  .divider {
+    width: 350px;
+  }
+  .card {
+    height: 388px;
+    width: 260px;
+  }
+}

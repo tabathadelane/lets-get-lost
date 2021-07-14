@@ -17,7 +17,7 @@ import React, { useState} from 'react';
                 <h2 class="front">
                     <p>Dress Code</p>
                 </h2>
-                <h3 class="back">We will hold a small ceremony in the national forest. Please don't wear bright or bold colors that will clash with the natural environment and be prepared for PNW weather in the fall.</h3>
+                <h3 class="back">We will hold a small ceremony outside within the national forest. Please don't wear bright or bold colors that will clash with the natural environment and be prepared for Washington weather in the fall. (I'm not wearing heels with my wedding dress.)</h3>
             </div>
         </div>
         )};
