@@ -16,7 +16,7 @@ function AirBandB(){
                 <p>The AirB&B</p>
             </h2>
             <h3 class="back" style={{'display': 'block', 'padding-top': '40%'}}>
-            <a class="link" href="https://google.com">Check it out!</a>
+            <a class="link" href="https://airbnb.com">Check it out!</a>
             <br /><br />
              Sat Oct 16 @ 3PM -<br/>Tue Oct 19 @ 12PM. <br /><br />
              Forks, WA
