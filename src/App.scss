@@ -141,6 +141,7 @@ h3 {
 
 .flipped {
   transform: rotateY(180deg);
+  background: transparent !important;
 }
 
 .deck {
