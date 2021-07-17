@@ -79,7 +79,6 @@ html body {
   transition: all 1s linear;
   transform-style: preserve-3d;
   color: #ccc;
-  background-color: #222 !important;
   border-radius: 10px !important;
   width: 100%;
   margin: auto;
@@ -89,6 +88,7 @@ html body {
 
 .front,
 .back {
+  background-color: #222 !important;
   border-radius: 10px !important;
   height: 100%;
   width: 100%;
