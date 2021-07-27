@@ -16,10 +16,11 @@ function AirBandB(){
                 <p>The AirB&B</p>
             </h2>
             <h3 class="back" style={{'display': 'block', 'padding-top': '40%'}}>
-            <a class="link" href="https://airbnb.com">Check it out!</a>
+            <a class="link" href="https://www.airbnb.com/rooms/13000987?source_impression_id=p3_1627412534_kXixYF7tOdrrPjV2">Check it out!</a>
             <br /><br />
-             Sat Oct 16 @ 3PM -<br/>Tue Oct 19 @ 12PM. <br /><br />
-             Forks, WA
+             Sat Oct 16 @ 3PM -<br/>Tue Oct 19 @ 12PM. 
+             <br /><br />
+             77 Lake Pleasant Park Road, Beaver, WA 98305
             <br /><br />            
             </h3>
         </div>
