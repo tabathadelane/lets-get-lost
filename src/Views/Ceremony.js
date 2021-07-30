@@ -15,12 +15,12 @@ function Ceremony(){
                 <h2 class="front">
                     <p>Ceremony</p>
                 </h2>
-                <div class="back">
+                <h3 class="back">
                     Hoh Rainforest •
                     Olympic National Park, Forks, WA <br /><br />
                     
                     Monday Oct 18 @ 4PM
-                </div>
+                </h3>
             </div>
         </div>
     )}
