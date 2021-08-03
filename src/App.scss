@@ -156,6 +156,7 @@ h3 {
 .story h3 {
   font-family: "Raleway", sans-serif;
   text-shadow: #000 2px 2px 2px;
+  font-weight: 200;
 }
 
 .lost {
@@ -169,12 +170,28 @@ h3 {
 .photo {
   margin-bottom: 10px;
   filter: sepia(60%) saturate(140%) opacity(90%);
+  border: rgb(200, 167, 93) solid 3px;
 
   width: 80vw;
   border-radius: 5px;
-  border: rgb(200, 167, 93) solid 3px;
   // height: auto;
   // display: block;
+}
+table {
+  border-top: rgb(200, 167, 93) solid 3px !important;
+  margin-top: 25px;
+}
+th,
+td {
+  font-size: 22px;
+  color: rgb(250, 241, 221);
+  font-family: "Raleway", sans-serif;
+  text-shadow: #000 2px 2px 2px;
+  border-bottom: rgb(200, 167, 93) solid 3px !important;
+  border-radius: 2px !important;
+}
+td {
+  font-weight: 400;
 }
 
 // <576px	Small

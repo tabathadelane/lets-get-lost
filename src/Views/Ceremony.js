@@ -19,7 +19,7 @@ function Ceremony(){
                     Hoh Rainforest •
                     Olympic National Park, Forks, WA <br /><br />
                     
-                    Monday Oct 18 @ 4PM
+                    Monday Oct 18 @ 3PM
                 </h3>
             </div>
         </div>
