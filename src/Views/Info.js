@@ -51,7 +51,7 @@ function Backstory(){
 
             <br/>
             <br/>
-            Built and Designed by Tabatha Delane ©2021    •    Last Updated: Fri Aug 2, 2021
+            Built and Designed by Tabatha Delane ©2021    •    Last Updated: Mon Aug 2, 2021
 
         </div>
     )}
